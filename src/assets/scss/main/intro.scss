@@ -1,0 +1,105 @@
+@import "../vars.scss";
+
+#intro {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    top: $header-height-normal;
+
+    background: url("../images/intro-bgr.jpg") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position-x: 170%;
+}
+
+.intro__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/***** INFO *****/
+.intro__info-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.intro__header {
+    width: 70%;
+    display: block;
+
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 96.5%;
+    color: $black-color-26;
+}
+
+.intro__desc {
+    width: 62%;
+    display: block;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 199.5%;
+    color: $black-color;
+}
+
+/***** INFO CARD *****/
+.intro__card-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro__card {
+    width: 405px;
+    height: 210px;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    align-content: center;
+    border-radius: 6px;
+    padding: 40px;
+    
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#intro-card-1 { background: url('../images/intro/intro-card-bgr-1.jpg') center no-repeat; }
+#intro-card-2 { background: url('../images/intro/intro-card-bgr-2.jpg') center no-repeat; }
+
+.intro__card-text {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31.1111px;
+    line-height: 111.5%;
+}
+
+.intro__bgr-color-text-block {
+    padding: 4px;
+    margin-top: 5px;
+}
+
+#intro-free-text { background-color: $green-color-48; }
+#intro-sale-size-text { background-color: $red-color; }
+
+/******************************************************************/
+/************************** SCREEN 1919 ***************************/
+/******************************************************************/
+@media (max-width: 1919px) {
+    #intro { height: 820px; background-position-x: 195%; }
+    .intro__info-block { width: 70%; }
+    .intro__card { width: 390px; height: 200px; }
+}

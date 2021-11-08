@@ -1,0 +1,86 @@
+@import "../vars.scss";
+
+/***** CAROUSEL HEAD *****/
+.carousel__head {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.carousel__head h2 {
+    display: block;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 111.5%;
+    color: $black-color;
+}
+
+.carousel__btn-block {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/***** CAROUSEL BTN *****/
+.carousel__btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    background-color: $red-color;
+    cursor: pointer;
+}
+
+.carousel__btn span { 
+    display: block; 
+    position: absolute;
+    top: 25px;
+}
+
+.left-btn span { left: 17px; }
+.right-btn span { left: 19px; }
+
+.left-btn span::before, .left-btn span::after,
+.right-btn span::before, .right-btn span::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    background-color: $white-color;
+}
+
+.left-btn span::before { top: -5px; transform: rotate(-45deg); }
+.left-btn span::after { top: 5px; transform: rotate(45deg); }
+.right-btn span::before { top: -5px; transform: rotate(45deg); }
+.right-btn span::after { top: 5px; transform: rotate(-45deg); }
+
+/***** CAROUSEL *****/
+.carousel {
+    width: 100%;
+    height: $card-height;
+}
+
+.cards { 
+    width: 100%;
+    height: calc(100% + 20px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 65px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0 10px;
+    list-style-type: none; 
+}
+
+/******************************************************************/
+/************************** SCREEN 1919 ***************************/
+/******************************************************************/
+@media (max-width: 1919px) {
+    .cards { gap: 23px; }
+}

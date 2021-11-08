@@ -1,0 +1,75 @@
+@import "../vars.scss";
+
+.tocatalog__inner {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+
+    padding: 0 70px;
+
+    border-radius: 8px;
+    background: url("../images/to-catalog_bgr.jpg") center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.tocatalog__inner h2 {
+    width: 25%;
+
+    display: block;
+
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 111.5%;
+    color: $white-color;
+}
+
+.tocatalog__inner p {
+    width: 25%;
+
+    display: block;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 108.5%;
+    color: $white-color;
+}
+
+.tocatalog__inner a { text-decoration: none; }
+
+.to-catalog__link-content {
+    width: 220px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    background-color: $red-2-color;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 186%;
+    color: $white-color;
+}
+
+/******************************************************************/
+/************************** SCREEN 1919 ***************************/
+/******************************************************************/
+@media (max-width: 1919px) {
+    .tocatalog__inner { height: 260px; }
+    .tocatalog__inner h2 { width: 40%; }
+    .tocatalog__inner p { width: 40%; }
+}

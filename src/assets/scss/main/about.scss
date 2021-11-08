@@ -1,0 +1,49 @@
+@import "../vars.scss";
+
+.about__inner {
+    width: 100%;
+    height: 640px;
+
+    display: block;
+    
+    position: relative;
+
+    background: url("../images/about_bgr.jpg") center no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+}
+
+.about__head-container {
+    width: 100%;
+
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 54%;
+}
+
+.about__head-container h2 {
+    width: 100%;
+
+    display: block;
+
+    text-align: center;
+
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 186px;
+    line-height: 111.5%;
+    letter-spacing: 0.035em;
+    word-spacing: calc($container-width-1920 * 0.14);
+    color: $white-color;
+}
+
+/******************************************************************/
+/************************** SCREEN 1919 ***************************/
+/******************************************************************/
+@media (max-width: 1919px) {
+    .about__head-container { top: 50%; }
+    .about__head-container h2 { word-spacing: calc($container-width-1440 * 0.08); }
+}

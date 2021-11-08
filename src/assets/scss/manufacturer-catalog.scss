@@ -1,0 +1,67 @@
+@import "vars";
+
+.manufactirer-block {
+    width: 246px;
+    display: block;
+}
+
+.manufacturer-header {
+    width: 100%;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.manufacturer-logo__wrapper {
+    width: 70px;
+    height: 70px;
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+.manufacturer-logo__wrapper img {
+    object-fit: contain;
+}
+
+.manufacturer-name {
+    width: auto;
+    display: block;
+
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 111.5%;
+    color: $black-color;
+}
+
+.manufacturer-categories-block {
+    width: 100%;
+    display: block;
+}
+
+.manufacturer-categories-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.manufacturer-categories-list li { list-style-type: none; }
+.manufacturer-categories-list a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150.5%;
+    color: $black-color;
+    text-decoration: none;
+}
